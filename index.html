@@ -1997,4 +1997,1600 @@
           width: 24px;
           height: 24px;
           font-size: 0.72rem;
+        }        .hud-step-line {
+          width: 16px;
         }
+        .hud-right {
+          grid-column: 1 / -1;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 7px;
+        }
+        .hud-timer-badge {
+          padding: 5px 10px;
+          font-size: 1rem;
+        }
+        .hud-icon-btn {
+          padding: 6px 9px;
+          font-size: 0.75rem;
+        }
+        .hud-right input[type='range'] {
+          width: 52px !important;
+        }
+        .sub-hud-bar {
+          padding: 7px 12px;
+          gap: 10px;
+          flex-wrap: wrap;
+          font-size: 0.8rem;
+        }
+        #l1t1View,
+        #l1t3View {
+          padding: 14px;
+        }
+        .o2-console-card {
+          padding: 22px 18px;
+        }
+        .o2-header h2 {
+          font-size: 1.45rem;
+        }
+        .o2-header p {
+          font-size: 0.92rem;
+        }
+      }
+      @media (max-width: 430px) {
+        .top-hud {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .hud-center {
+          grid-row: 2;
+          justify-content: center;
+        }
+        .hud-right {
+          grid-row: 3;
+        }
+        .hud-task-name {
+          max-width: none;
+          font-size: 0.88rem;
+        }
+        .hud-avatar-pill {
+          padding: 5px 9px;
+          font-size: 0.82rem;
+        }
+        .sub-hud-bar {
+          justify-content: center;
+        }
+        .hud-stat-pill {
+          gap: 5px;
+        }
+        .o2-console-card {
+          padding: 18px 14px;
+        }
+        .o2-meter-display {
+          font-size: 3rem;
+        }
+      }
+
+      /* Task 3's Level 2 HUD keeps the original left / center / right hierarchy. */
+      .top-hud.level2-task3 .hud-left {
+        flex: 0 1 auto;
+      }
+      .top-hud.level2-task3 .hud-center {
+        flex: 1 1 auto;
+        justify-content: center;
+      }
+      .top-hud.level2-task3 .hud-right {
+        flex: 0 0 auto;
+      }
+      @media (max-width: 760px) {
+        .top-hud.level2-task3 {
+          grid-template-columns: minmax(0, 1fr) auto;
+        }
+        .top-hud.level2-task3 .hud-left {
+          grid-row: 1;
+          grid-column: 1;
+        }
+        .top-hud.level2-task3 .hud-center {
+          grid-row: 2;
+          grid-column: 1 / -1;
+          flex-wrap: wrap;
+        }
+        .top-hud.level2-task3 .hud-right {
+          grid-row: 1;
+          grid-column: 2;
+          justify-content: flex-end;
+          flex-wrap: wrap;
+          gap: 5px;
+        }
+        .top-hud.level2-task3 .hud-icon-btn {
+          padding: 5px 7px;
+          font-size: 0.68rem;
+        }
+      }
+      @media (max-width: 430px) {
+        .top-hud.level2-task3 {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .top-hud.level2-task3 .hud-left {
+          grid-row: 1;
+          grid-column: 1;
+        }
+        .top-hud.level2-task3 .hud-center {
+          grid-row: 2;
+          grid-column: 1;
+        }
+        .top-hud.level2-task3 .hud-right {
+          grid-row: 3;
+          grid-column: 1;
+          justify-content: center;
+        }
+      }
+      .top-hud.level2-task3 {
+        gap: 14px;
+      }
+      .top-hud.level2-task3 .hud-left {
+        flex: 0 0 245px;
+        min-width: 245px;
+        gap: 12px;
+      }
+      .top-hud.level2-task3 .hud-task-tag,
+      .top-hud.level2-task3 .hud-task-name {
+        white-space: nowrap;
+        max-width: none;
+      }
+      .top-hud.level2-task3 .hud-center {
+        min-width: 0;
+      }
+      .top-hud.level2-task3 .hud-step-dot,
+      .top-hud.level2-task3 .hud-step-line {
+        flex: 0 0 auto;
+      }
+      .top-hud.level2-task3 .hud-right {
+        gap: 8px;
+      }
+      @media (max-width: 1120px) {
+        .top-hud.level2-task3 {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) auto;
+        }
+        .top-hud.level2-task3 .hud-left {
+          grid-row: 1;
+          grid-column: 1;
+          min-width: 0;
+        }
+        .top-hud.level2-task3 .hud-center {
+          grid-row: 2;
+          grid-column: 1 / -1;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .top-hud.level2-task3 .hud-right {
+          grid-row: 1;
+          grid-column: 2;
+          justify-content: flex-end;
+          flex-wrap: wrap;
+        }
+      }
+      @media (max-width: 430px) {
+        .top-hud.level2-task3 {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .top-hud.level2-task3 .hud-left {
+          grid-row: 1;
+          grid-column: 1;
+        }
+        .top-hud.level2-task3 .hud-center {
+          grid-row: 2;
+          grid-column: 1;
+        }
+        .top-hud.level2-task3 .hud-right {
+          grid-row: 3;
+          grid-column: 1;
+          justify-content: center;
+        }
+      }
+      /* Level 3: bright, friendly mission cards inspired by the Level 1 workshop. */
+      .level-cards-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 1180px; }
+      .card-level-3 .level-card-tag { background: rgba(255,209,102,.16); color: var(--accent-gold); border: 1px solid var(--accent-gold); }
+      .card-level-3:hover { border-color: var(--accent-gold); box-shadow: 0 18px 45px rgba(255,209,102,.28); }
+      .l3-task-view { display: none; width: 100%; height: 100%; overflow-y: auto; padding: 20px; align-items: flex-start; justify-content: center; }
+      .l3-mission-shell { width: min(1120px, 100%); margin: auto; padding: 22px; border-radius: 26px; border: 2px solid rgba(0,240,255,.35); background: linear-gradient(145deg, rgba(18,30,68,.96), rgba(9,15,38,.96)); box-shadow: 0 18px 45px rgba(0,0,0,.32); }
+      .l3-mission-heading { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-bottom:18px; }
+      .l3-mission-heading h2 { font-size:clamp(1.4rem,3vw,2rem); color:#fff; margin:4px 0; }
+      .l3-mission-heading p { color:var(--text-sub); line-height:1.45; }
+      .l3-kicker { color:var(--accent-gold); font-size:.72rem; font-weight:900; letter-spacing:1.4px; }
+      .l3-radiation-meter { min-width:190px; padding:12px 16px; border-radius:16px; background:rgba(255,77,109,.13); border:1px solid rgba(255,77,109,.55); display:grid; gap:6px; }
+      .l3-radiation-meter span { font-size:.68rem; font-weight:900; color:#ff9aaa; }
+      .l3-radiation-meter strong { font-size:1.4rem; }
+      .l3-radiation-track,.l3-charge-track { height:10px; background:rgba(255,255,255,.12); border-radius:99px; overflow:hidden; }
+      .l3-radiation-track span { display:block; height:100%; background:linear-gradient(90deg,#ffd166,#ff4d6d); border-radius:99px; transition:width .25s; }
+      .l3-storm-scene { height:170px; border-radius:22px; position:relative; overflow:hidden; margin-bottom:18px; background:radial-gradient(circle at 70% 25%,rgba(255,112,166,.35),transparent 25%),linear-gradient(120deg,#152a60,#34215f 55%,#101936); border:1px solid rgba(255,255,255,.15); display:flex; align-items:center; justify-content:space-around; }
+      .l3-storm-scene:before,.l3-storm-scene:after { content:''; position:absolute; width:260px; height:260px; border:2px solid rgba(0,240,255,.25); border-radius:50%; animation:l3Pulse 3s infinite; }
+      .l3-storm-scene:after { width:340px; height:340px; animation-delay:1s; }
+      .l3-storm-planet,.l3-storm-comet,.l3-storm-astronaut { position:relative; z-index:2; filter:drop-shadow(0 8px 12px rgba(0,0,0,.4)); }
+      .l3-storm-planet { font-size:5rem; }.l3-storm-comet { font-size:4rem; animation:l3Float 2s ease-in-out infinite; }.l3-storm-astronaut { font-size:4rem; animation:l3Float 2.5s ease-in-out infinite reverse; }
+      .l3-storm-caption { position:absolute; bottom:10px; z-index:3; color:#fff; font-size:.7rem; font-weight:900; letter-spacing:1.3px; text-shadow:0 2px 8px #000; }
+      .l3-shield-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+      .l3-shield-card,.l3-store-item,.l3-checklist-panel,.l3-crew-card { background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.14); border-radius:18px; padding:16px; }
+      .l3-shield-card { text-align:center; }.l3-shield-icon { font-size:2.7rem; margin-bottom:5px; }.l3-shield-card h3 { font-size:.95rem; margin-bottom:10px; }.l3-shield-card p { font-size:.72rem; color:var(--text-sub); margin:8px 0; }
+      .l3-charge-track span { display:block; height:100%; background:linear-gradient(90deg,#00f0ff,#06d6a0); border-radius:99px; transition:width .2s; }
+      .l3-action-btn { width:100%; padding:10px 12px; font-size:.78rem; }.l3-action-btn:disabled,.l3-buy-btn:disabled { opacity:.7; cursor:default; }
+      .l3-feedback { margin:14px 0; padding:12px 16px; border-radius:14px; background:rgba(0,240,255,.1); border:1px solid rgba(0,240,255,.25); color:#d8faff; font-weight:700; text-align:center; }
+      .l3-wallet,.l3-earth-badge { padding:12px 18px; border-radius:18px; background:rgba(255,209,102,.15); border:1px solid var(--accent-gold); color:var(--accent-gold); font-weight:900; white-space:nowrap; }
+      .l3-order-strip { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-bottom:16px; }
+      .l3-order-strip div { display:flex; flex-direction:column; gap:4px; align-items:center; text-align:center; padding:12px; border-radius:15px; background:rgba(6,214,160,.09); border:1px solid rgba(6,214,160,.25); }
+      .l3-order-strip div:first-child:before { content:''; }.l3-order-strip strong { color:#fff; }.l3-order-strip span { color:var(--text-sub); font-size:.78rem; }
+      .l3-store-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+      .l3-store-item { display:flex; align-items:center; gap:12px; }.l3-store-item-icon { font-size:2.4rem; }.l3-store-item-copy { flex:1; min-width:0; }.l3-store-item-copy h3 { font-size:1rem; }.l3-store-item-copy p { color:var(--text-sub); font-size:.78rem; margin:4px 0; }.l3-store-item-copy strong { color:var(--accent-gold); font-size:.74rem; }.l3-buy-btn { padding:9px 12px; font-size:.72rem; white-space:nowrap; }
+      .l3-checklist-panel { max-width:760px; margin:0 auto 14px; text-align:center; }.l3-checklist-panel h3 { color:var(--accent-gold); font-size:1.1rem; }.l3-checklist-panel p { color:var(--text-sub); margin:6px 0 14px; }
+      .l3-checklist { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; margin-bottom:14px; }.l3-check-item { display:flex; align-items:center; gap:10px; padding:12px; border-radius:13px; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.06); color:#fff; text-align:left; cursor:pointer; }.l3-check-item.checked { border-color:var(--accent-green); background:rgba(6,214,160,.14); }.l3-check-icon { font-size:1.4rem; }.l3-check-item strong { margin-left:auto; color:var(--accent-green); }
+      .l3-rescue-crew { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:16px; }.l3-crew-card { text-align:center; }.l3-crew-card.rescued { border-color:var(--accent-green); background:rgba(6,214,160,.1); }.l3-crew-avatar { font-size:3rem; }.l3-crew-copy h3 { margin:5px 0; }.l3-crew-copy p,.l3-crew-status { color:var(--text-sub); font-size:.78rem; line-height:1.4; }.l3-crew-status { margin:8px 0; color:var(--accent-green); }.l3-crew-actions { display:grid; gap:8px; }.l3-crew-actions .btn { font-size:.7rem; padding:9px 8px; }
+      @keyframes l3Pulse { 0%,100% { transform:scale(.9); opacity:.35; } 50% { transform:scale(1.08); opacity:.8; } }
+      @keyframes l3Float { 0%,100% { transform:translateY(0) rotate(-5deg); } 50% { transform:translateY(-10px) rotate(5deg); } }
+      @media (max-width: 980px) { .level-cards-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+      @media (max-width: 680px) {
+        .level-cards-grid,.l3-shield-grid,.l3-order-strip,.l3-store-grid,.l3-checklist,.l3-rescue-crew { grid-template-columns:1fr; }
+        .l3-mission-shell { padding:14px; }.l3-mission-heading { align-items:flex-start; flex-direction:column; }
+        .l3-storm-scene { height:130px; }.l3-storm-planet { font-size:3.5rem; }.l3-storm-comet,.l3-storm-astronaut { font-size:2.8rem; }
+        .l3-store-item { flex-wrap:wrap; }.l3-buy-btn { width:100%; }.l3-task-view { padding:10px; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Starry Background with Twinkling Stars & Distant Planets -->
+    <div class="space-backdrop">
+      <div class="planet-bg planet-1"></div>
+      <div class="planet-bg planet-2"></div>
+      <div id="starField"></div>
+    </div>
+
+    <!-- =========================================================
+       1. OPENING / TITLE SCREEN
+       ========================================================= -->
+    <div id="screenTitle" class="game-screen active">
+      <div class="title-logo-wrap">
+        <div class="title-logo-badge">SPACE ACADEMY ADVENTURE</div>
+        <h1 class="title-heading">COSMO CREW</h1>
+        <p class="title-subheading">
+          Choose your cute avatar and launch into your cosmic missions!
+        </p>
+      </div>
+
+      <!-- Avatar Selection Box -->
+      <div class="avatar-selection-box">
+        <div class="avatar-box-title">CHOOSE YOUR ANIMAL ASTRONAUT</div>
+        <div class="avatar-grid">
+          <!-- Bunny Astronaut -->
+          <div class="avatar-option selected" data-avatar="bunny">
+            <svg viewBox="0 0 100 100" class="avatar-svg">
+              <rect
+                x="25"
+                y="70"
+                width="50"
+                height="26"
+                rx="10"
+                fill="#00b4d8"
+              />
+              <rect
+                x="30"
+                y="66"
+                width="40"
+                height="10"
+                rx="5"
+                fill="#ffd166"
+              />
+              <!-- Bunny Long Ears -->
+              <ellipse
+                cx="36"
+                cy="22"
+                rx="7"
+                ry="18"
+                fill="#f8fafc"
+                stroke="#00b4d8"
+                stroke-width="2.5"
+                transform="rotate(-8 36 22)"
+              />
+              <ellipse
+                cx="36"
+                cy="22"
+                rx="3.5"
+                ry="12"
+                fill="#ffb4a2"
+                transform="rotate(-8 36 22)"
+              />
+              <ellipse
+                cx="64"
+                cy="22"
+                rx="7"
+                ry="18"
+                fill="#f8fafc"
+                stroke="#00b4d8"
+                stroke-width="2.5"
+                transform="rotate(8 64 22)"
+              />
+              <ellipse
+                cx="64"
+                cy="22"
+                rx="3.5"
+                ry="12"
+                fill="#ffb4a2"
+                transform="rotate(8 64 22)"
+              />
+              <!-- Bubble Helmet -->
+              <circle
+                cx="50"
+                cy="50"
+                r="30"
+                fill="rgba(0, 240, 255, 0.15)"
+                stroke="#00f0ff"
+                stroke-width="3"
+              />
+              <!-- Bunny Face Inside Helmet -->
+              <ellipse cx="50" cy="52" rx="20" ry="18" fill="#f8fafc" />
+              <circle cx="43" cy="49" r="3" fill="#0f172a" />
+              <circle cx="57" cy="49" r="3" fill="#0f172a" />
+              <circle cx="44" cy="47" r="1" fill="#ffffff" />
+              <circle cx="58" cy="47" r="1" fill="#ffffff" />
+              <ellipse
+                cx="39"
+                cy="54"
+                rx="3.5"
+                ry="2"
+                fill="#ffb4a2"
+                opacity="0.8"
+              />
+              <ellipse
+                cx="61"
+                cy="54"
+                rx="3.5"
+                ry="2"
+                fill="#ffb4a2"
+                opacity="0.8"
+              />
+              <polygon points="50,53 48,51 52,51" fill="#ff70a6" />
+              <path
+                d="M48,55 Q50,57 52,55"
+                stroke="#475569"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <path
+                d="M30,36 A 25 25 0 0 1 45,26"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+                opacity="0.8"
+              />
+            </svg>
+            <div class="avatar-label-name">Pip</div>
+            <div class="avatar-label-type">Bunny Astronaut</div>
+          </div>
+
+          <!-- Kitty Astronaut -->
+          <div class="avatar-option" data-avatar="cat">
+            <svg viewBox="0 0 100 100" class="avatar-svg">
+              <rect
+                x="25"
+                y="70"
+                width="50"
+                height="26"
+                rx="10"
+                fill="#9d4edd"
+              />
+              <rect
+                x="30"
+                y="66"
+                width="40"
+                height="10"
+                rx="5"
+                fill="#ffd166"
+              />
+              <!-- Kitty Pointy Ears -->
+              <polygon
+                points="28,32 35,12 44,26"
+                fill="#ff70a6"
+                stroke="#c77dff"
+                stroke-width="2"
+              />
+              <polygon points="32,30 36,18 41,27" fill="#ffe5ec" />
+              <polygon
+                points="72,32 65,12 56,26"
+                fill="#ff70a6"
+                stroke="#c77dff"
+                stroke-width="2"
+              />
+              <polygon points="68,30 64,18 59,27" fill="#ffe5ec" />
+              <!-- Helmet -->
+              <circle
+                cx="50"
+                cy="50"
+                r="30"
+                fill="rgba(255, 112, 166, 0.15)"
+                stroke="#ff70a6"
+                stroke-width="3"
+              />
+              <!-- Kitty Face -->
+              <circle cx="50" cy="52" r="19" fill="#fff0f3" />
+              <circle cx="43" cy="49" r="3" fill="#0f172a" />
+              <circle cx="57" cy="49" r="3" fill="#0f172a" />
+              <circle cx="44" cy="47" r="1" fill="#ffffff" />
+              <circle cx="58" cy="47" r="1" fill="#ffffff" />
+              <!-- Whiskers -->
+              <line
+                x1="33"
+                y1="52"
+                x2="26"
+                y2="50"
+                stroke="#ff70a6"
+                stroke-width="1.5"
+              />
+              <line
+                x1="33"
+                y1="55"
+                x2="26"
+                y2="56"
+                stroke="#ff70a6"
+                stroke-width="1.5"
+              />
+              <line
+                x1="67"
+                y1="52"
+                x2="74"
+                y2="50"
+                stroke="#ff70a6"
+                stroke-width="1.5"
+              />
+              <line
+                x1="67"
+                y1="55"
+                x2="74"
+                y2="56"
+                stroke="#ff70a6"
+                stroke-width="1.5"
+              />
+              <polygon points="50,53 48,51 52,51" fill="#ff4d6d" />
+              <path
+                d="M47,55 Q50,57 53,55"
+                stroke="#475569"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <path
+                d="M30,36 A 25 25 0 0 1 45,26"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+                opacity="0.8"
+              />
+            </svg>
+            <div class="avatar-label-name">Luna</div>
+            <div class="avatar-label-type">Kitty Astronaut</div>
+          </div>
+
+          <!-- Bear Astronaut -->
+          <div class="avatar-option" data-avatar="bear">
+            <svg viewBox="0 0 100 100" class="avatar-svg">
+              <rect
+                x="25"
+                y="70"
+                width="50"
+                height="26"
+                rx="10"
+                fill="#e07a5f"
+              />
+              <rect
+                x="30"
+                y="66"
+                width="40"
+                height="10"
+                rx="5"
+                fill="#ffd166"
+              />
+              <!-- Round Bear Ears -->
+              <circle
+                cx="32"
+                cy="26"
+                r="9"
+                fill="#c47c48"
+                stroke="#ffd166"
+                stroke-width="2"
+              />
+              <circle cx="32" cy="26" r="4.5" fill="#ffe8d6" />
+              <circle
+                cx="68"
+                cy="26"
+                r="9"
+                fill="#c47c48"
+                stroke="#ffd166"
+                stroke-width="2"
+              />
+              <circle cx="68" cy="26" r="4.5" fill="#ffe8d6" />
+              <!-- Helmet -->
+              <circle
+                cx="50"
+                cy="50"
+                r="30"
+                fill="rgba(255, 209, 102, 0.15)"
+                stroke="#ffd166"
+                stroke-width="3"
+              />
+              <!-- Bear Face -->
+              <circle cx="50" cy="52" r="19" fill="#d48c58" />
+              <ellipse cx="50" cy="56" rx="8" ry="6" fill="#ffe8d6" />
+              <circle cx="43" cy="48" r="3" fill="#0f172a" />
+              <circle cx="57" cy="48" r="3" fill="#0f172a" />
+              <circle cx="44" cy="46" r="1" fill="#ffffff" />
+              <circle cx="58" cy="46" r="1" fill="#ffffff" />
+              <ellipse cx="50" cy="54" rx="3.5" ry="2.2" fill="#0f172a" />
+              <path d="M50,56 L50,58" stroke="#0f172a" stroke-width="1.5" />
+              <path
+                d="M30,36 A 25 25 0 0 1 45,26"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+                opacity="0.8"
+              />
+            </svg>
+            <div class="avatar-label-name">Barnaby</div>
+            <div class="avatar-label-type">Bear Astronaut</div>
+          </div>
+
+          <!-- Fox Astronaut -->
+          <div class="avatar-option" data-avatar="fox">
+            <svg viewBox="0 0 100 100" class="avatar-svg">
+              <rect
+                x="25"
+                y="70"
+                width="50"
+                height="26"
+                rx="10"
+                fill="#f77f00"
+              />
+              <rect
+                x="30"
+                y="66"
+                width="40"
+                height="10"
+                rx="5"
+                fill="#ffd166"
+              />
+              <!-- Fox Pointy Ears -->
+              <polygon
+                points="26,30 33,10 44,24"
+                fill="#e85d04"
+                stroke="#ffd166"
+                stroke-width="2"
+              />
+              <polygon points="30,28 34,16 41,25" fill="#ffffff" />
+              <polygon
+                points="74,30 67,10 56,24"
+                fill="#e85d04"
+                stroke="#ffd166"
+                stroke-width="2"
+              />
+              <polygon points="70,28 66,16 59,25" fill="#ffffff" />
+              <!-- Helmet -->
+              <circle
+                cx="50"
+                cy="50"
+                r="30"
+                fill="rgba(247, 127, 0, 0.15)"
+                stroke="#f77f00"
+                stroke-width="3"
+              />
+              <!-- Fox Face -->
+              <circle cx="50" cy="52" r="19" fill="#f48c06" />
+              <path
+                d="M33,52 Q40,62 50,60 Q60,62 67,52 Q58,68 42,68 Z"
+                fill="#ffffff"
+              />
+              <circle cx="43" cy="48" r="3" fill="#0f172a" />
+              <circle cx="57" cy="48" r="3" fill="#0f172a" />
+              <circle cx="44" cy="46" r="1" fill="#ffffff" />
+              <circle cx="58" cy="46" r="1" fill="#ffffff" />
+              <circle cx="50" cy="57" r="2.5" fill="#0f172a" />
+              <path
+                d="M30,36 A 25 25 0 0 1 45,26"
+                stroke="#ffffff"
+                stroke-width="3"
+                stroke-linecap="round"
+                fill="none"
+                opacity="0.8"
+              />
+            </svg>
+            <div class="avatar-label-name">Sparky</div>
+            <div class="avatar-label-type">Fox Astronaut</div>
+          </div>
+        </div>
+
+        <!-- Player Name Input -->
+        <div class="name-input-row">
+          <span class="name-input-label">YOUR ASTRONAUT NAME:</span>
+          <input
+            type="text"
+            id="avatarNameInput"
+            class="name-input-field"
+            value="Pip"
+            maxlength="15"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Live Animal Astronaut Preview Badge -->
+        <div id="avatarLivePreview" class="avatar-meet-preview">
+          <span>Meet your Cute Animal Astronaut:</span>
+          <strong id="previewAvatarLabel" style="color: #00f0ff"
+            >Cadet Pip the Bunny Astronaut 🐰</strong
+          >
+        </div>
+      </div>
+
+      <!-- Cute Animated Rocket on Launchpad -->
+      <div class="rocket-launchpad-wrap">
+        <div id="titleRocket" class="title-rocket">
+          <svg viewBox="0 0 100 140">
+            <!-- Rocket Exhaust Flames -->
+            <g class="rocket-flames">
+              <polygon points="50,110 38,138 50,130 62,138" fill="#ffd166" />
+              <polygon points="50,114 44,130 50,126 56,130" fill="#ff70a6" />
+            </g>
+            <!-- Rocket Body Fins -->
+            <polygon points="22,95 38,70 38,105" fill="#ff4d6d" />
+            <polygon points="78,95 62,70 62,105" fill="#ff4d6d" />
+            <!-- Rocket Main Fuselage -->
+            <path
+              d="M50,10 C68,35 68,90 62,108 L38,108 C32,90 32,35 50,10 Z"
+              fill="#f8fafc"
+              stroke="#00f0ff"
+              stroke-width="3"
+            />
+            <!-- Red Nosecone -->
+            <path
+              d="M50,10 C58,22 62,35 62,40 L38,40 C38,35 42,22 50,10 Z"
+              fill="#ff4d6d"
+            />
+            <!-- Cyan Cockpit Porthole -->
+            <circle
+              cx="50"
+              cy="58"
+              r="14"
+              fill="#00f0ff"
+              stroke="#ffffff"
+              stroke-width="3"
+            />
+            <circle cx="46" cy="54" r="4" fill="#ffffff" />
+            <!-- Decorative Trim -->
+            <rect x="38" y="80" width="24" height="6" fill="#ffd166" />
+          </svg>
+        </div>
+      </div>
+
+      <button id="btnStartAdventure" class="btn btn-gold btn-large pulse">
+        <span>🚀 START MISSION</span>
+      </button>
+    </div>
+
+    <!-- =========================================================
+       2. LEVEL SELECTION SCREEN
+       ========================================================= -->
+    <div id="screenLevelSelect" class="game-screen">
+      <div class="level-select-header">
+        <div id="levelSelectAvatarBadge" class="avatar-status-pill">
+          <!-- Rendered by JS -->
+        </div>
+        <h2 class="level-select-title">SELECT YOUR MISSION</h2>
+        <p style="color: var(--text-sub)">
+          Choose an adventure level to explore with your robot buddy!
+        </p>
+      </div>
+
+      <div class="level-cards-grid">
+        <!-- Level 1 Card -->
+        <div id="cardLevel1" class="level-card card-level-1">
+          <div class="level-card-planet-icon">🌍</div>
+          <div class="level-card-tag">LEVEL 1 • BIO-DOME WORKSHOP</div>
+          <h3 class="level-card-name">Earth Workshop</h3>
+          <p class="level-card-desc">
+            Help regulate greenhouse oxygen, cultivate cosmic crops, and
+            construct clean solar power arrays.
+          </p>
+          <div class="level-tasks-list">
+            <div class="level-task-item">
+              <span>🧪</span> Task 1: Oxygen Regulation (21%)
+            </div>
+            <div class="level-task-item">
+              <span>🌱</span> Task 2: Lunar Crop Production
+            </div>
+            <div class="level-task-item">
+              <span>☀️</span> Task 3: Solar Power Generation
+            </div>
+          </div>
+          <button class="btn btn-green" style="width: 100%">
+            LAUNCH TO LEVEL 1 🚀
+          </button>
+        </div>
+
+        <!-- Level 2 Card -->
+        <div id="cardLevel2" class="level-card card-level-2">
+          <div class="level-card-planet-icon">🛰️</div>
+          <div class="level-card-tag">LEVEL 2 • DEEP SPACE CRISIS</div>
+          <h3 class="level-card-name">Space Survival</h3>
+          <p class="level-card-desc">
+            Respond to cabin micro-meteoroid hull leaks, sprint the lunar
+            runway, and reboot the power deck.
+          </p>
+          <div class="level-tasks-list">
+            <div class="level-task-item">
+              <span>🛡️</span> Task 1: Fix Air Leak
+            </div>
+            <div class="level-task-item">
+              <span>🏃</span> Task 2: Collect Essentials (Runner)
+            </div>
+            <div class="level-task-item">
+              <span>⚡</span> Task 3: Power Save (Ship Deck)
+            </div>
+          </div>
+          <button class="btn btn-primary" style="width: 100%">
+            LAUNCH TO LEVEL 2 🚀
+          </button>
+        </div>
+
+        <!-- Level 3 Card -->
+        <div id="cardLevel3" class="level-card card-level-3">
+          <div class="level-card-planet-icon">🌎</div>
+          <div class="level-card-tag">LEVEL 3 • HOMEBOUND RESCUE</div>
+          <h3 class="level-card-name">Return to Earth</h3>
+          <p class="level-card-desc">
+            Survive a radiation storm, pack the food and survival supplies collected in earlier levels, and rescue the crew for the journey home.
+          </p>
+          <div class="level-tasks-list">
+            <div class="level-task-item"><span>☄️</span> Task 1: Radiation Storm</div>
+            <div class="level-task-item"><span>📦</span> Task 2: Check & Pack Supplies</div>
+            <div class="level-task-item"><span>🚀</span> Task 3: Rescue & Return</div>
+          </div>
+          <button class="btn btn-gold" style="width: 100%">
+            RETURN TO EARTH 🚀
+          </button>
+        </div>
+      </div>
+
+      <button id="btnBackToTitle" class="btn btn-secondary">
+        <span>◀ CHANGE AVATAR</span>
+      </button>
+    </div>
+
+    <!-- =========================================================
+       3. ACTIVE GAME SCREEN (Level 1 & Level 2 Gameplay)
+       ========================================================= -->
+    <div id="screenGame" class="game-screen">
+      <!-- Top HUD -->
+      <header class="top-hud">
+        <div class="hud-left">
+          <div id="hudAvatarBadge" class="hud-avatar-pill">
+            <span id="hudAvatarIcon">🐰</span>
+            <span id="hudAvatarName">Pip</span>
+          </div>
+          <div class="hud-mission-info">
+            <span id="hudTaskTag" class="hud-task-tag"
+              >LEVEL 1 • TASK 01 / 03</span
+            >
+            <h2 id="hudTaskName" class="hud-task-name">OXYGEN REGULATION</h2>
+          </div>
+        </div>
+
+        <div class="hud-center">
+          <div id="stepDot1" class="hud-step-dot active">1</div>
+          <div id="stepLine1" class="hud-step-line"></div>
+          <div id="stepDot2" class="hud-step-dot">2</div>
+          <div id="stepLine2" class="hud-step-line"></div>
+          <div id="stepDot3" class="hud-step-dot">3</div>
+        </div>
+
+        <div class="hud-right">
+          <div class="hud-timer-badge">
+            <span>⏱️</span>
+            <span id="hudTimerVal">1:00</span>
+          </div>
+          <button id="btnToggleMusic" class="hud-icon-btn">🎵 Music: ON</button>
+          <button id="btnToggleSfx" class="hud-icon-btn">🔊 SFX: ON</button>
+          <input
+            type="range"
+            id="volumeSlider"
+            min="0"
+            max="1"
+            step="0.05"
+            value="0.7"
+            title="Volume"
+            style="
+              width: 65px;
+              accent-color: var(--accent-cyan);
+              cursor: pointer;
+            "
+          />
+          <button id="btnPauseGame" class="hud-icon-btn">⏸️ Pause</button>
+        </div>
+      </header>
+
+      <!-- Sub-HUD Task Status Bars -->
+      <!-- Level 1 Task 1 Sub-HUD -->
+      <div id="l1t1HudItems" class="sub-hud-bar">
+        <div class="hud-stat-pill">
+          <span>OXYGEN STATUS:</span>
+          <span id="l1t1StatusPill" class="status-pill safe">STABLE (21%)</span>
+        </div>
+        <div class="hud-stat-pill">
+          <span>TARGET: <strong>21% (Safe: 19%–23%)</strong></span>
+        </div>
+      </div>
+
+      <!-- Level 1 Task 2 Sub-HUD -->
+      <div id="l1t2HudItems" class="sub-hud-bar">
+        <div class="hud-stat-pill">
+          <span>🌾 MISSION GOAL:</span>
+          <span id="l1t2GoalStatus"
+            >Plant, water, grow, and harvest 4 beds!</span
+          >
+        </div>
+      </div>
+
+      <!-- Level 1 Task 3 Sub-HUD -->
+      <div id="l1t3HudItems" class="sub-hud-bar">
+        <div class="hud-stat-pill">
+          <span>☀️ SOLAR GRID:</span>
+          <div class="hud-bar-wrap">
+            <div
+              id="l1t3PowerFill"
+              class="hud-bar-fill"
+              style="width: 0%"
+            ></div>
+          </div>
+          <span id="l1t3PowerVal">0%</span>
+        </div>
+        <div class="hud-stat-pill">
+          <span>PANELS MOUNTED: <strong id="l1t3CountVal">0 / 4</strong></span>
+        </div>
+      </div>
+
+      <!-- Level 2 Task 1 Sub-HUD -->
+      <div id="task1HudItems" class="sub-hud-bar">
+        <div class="hud-stat-pill">
+          <span>PRESSURE:</span>
+          <div class="hud-bar-wrap">
+            <div
+              id="t1PressureFill"
+              class="hud-bar-fill"
+              style="width: 100%"
+            ></div>
+          </div>
+          <span id="t1PressurePct">100%</span>
+        </div>
+        <div class="hud-stat-pill">
+          <span
+            >LEAKS SEALED: <strong id="t1LeaksRemaining">0 / 6</strong></span
+          >
+        </div>
+      </div>
+
+      <!-- Level 2 Task 2 Sub-HUD -->
+      <div id="task2HudItems" class="sub-hud-bar">
+        <div id="pillO2" class="hud-stat-pill">
+          <span>💎 O₂:</span> <strong id="runnerO2Count">0/3</strong>
+        </div>
+        <div id="pillWater" class="hud-stat-pill">
+          <span>💧 Water:</span> <strong id="runnerWaterCount">0/1</strong>
+        </div>
+        <div id="pillProtein" class="hud-stat-pill">
+          <span>🍫 Protein:</span> <strong id="runnerProteinCount">0/1</strong>
+        </div>
+      </div>
+
+      <!-- Level 2 Task 3 Sub-HUD -->
+      <div id="task3HudItems" class="sub-hud-bar task3-hud-items">
+        <div class="pressure-gauge-card">
+          <div class="gauge-header">
+            <span class="gauge-label">REACTOR POWER</span>
+            <span id="t3PowerPct" class="gauge-pct">100%</span>
+          </div>
+          <div class="pressure-bar-track">
+            <div
+              id="t3PowerFill"
+              class="pressure-bar-fill"
+              style="
+                width: 100%;
+                background: linear-gradient(
+                  90deg,
+                  #ff2a5f 0%,
+                  #ffb703 60%,
+                  #00ff88 100%
+                );
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="leaks-count-card">
+          <svg
+            class="leaks-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            aria-hidden="true"
+          >
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <div class="leaks-info-text">
+            <span class="leaks-label">SYSTEMS FIXED</span>
+            <span id="t3RepairedCount" class="leaks-number">0 / 3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Level 3 Task Status -->
+      <div id="l3t1HudItems" class="sub-hud-bar" style="display:none">
+        <div class="hud-stat-pill"><span>☢️ RADIATION:</span><strong id="l3RadiationValue">24%</strong></div>
+        <div class="hud-stat-pill"><span>🛡️ SHIELDS ONLINE:</span><strong id="l3ShieldCount">0 / 3</strong></div>
+      </div>
+      <div id="l3t2HudItems" class="sub-hud-bar" style="display:none">
+        <div class="hud-stat-pill"><span>🪙 CREW BUDGET:</span><strong id="l3HudCoins">0</strong></div>
+        <div class="hud-stat-pill"><span>🛒 SUPPLIES:</span><strong id="l3HudSupplies">0 / 9</strong></div>
+      </div>
+      <div id="l3t3HudItems" class="sub-hud-bar" style="display:none">
+        <div class="hud-stat-pill"><span>📋 CHECKLIST:</span><strong id="l3ChecklistCount">0 / 4</strong></div>
+        <div class="hud-stat-pill"><span>🧑‍🚀 RESCUED:</span><strong id="l3RescueCount">0 / 3</strong></div>
+      </div>
+
+      <!-- Main Viewport Area -->
+      <div class="game-content-view">
+        <!-- LEVEL 1, TASK 1: OXYGEN REGULATION -->
+        <div id="l1t1View" class="task-view-container">
+          <div id="l1t1DomeVisual" class="o2-console-card">
+            <div class="o2-header">
+              <h2>Bio-Dome Oxygen Regulation</h2>
+              <p>
+                Slide until the oxygen needle lands in the safe green zone at
+                <strong>21%</strong>.
+              </p>
+            </div>
+
+            <div id="l1t1WarningBox" class="status-banner safe">
+              <!-- Dynamic update via JS -->
+            </div>
+
+            <div id="l1t1OxygenVal" class="o2-meter-display">21%</div>
+
+            <!-- Color-coded track with safe zone -->
+            <div class="gauge-track-container">
+              <div class="zone-danger-low"></div>
+              <div class="zone-safe"></div>
+              <div class="zone-danger-high"></div>
+              <div
+                id="l1t1GaugeNeedle"
+                class="gauge-needle"
+                style="left: 21%"
+              ></div>
+            </div>
+
+            <!-- Large child-friendly slider -->
+            <input
+              type="range"
+              id="l1t1OxygenSlider"
+              class="slider-input-large"
+              min="0"
+              max="100"
+              value="10"
+            />
+
+            <button id="l1t1ConfirmBtn" class="btn btn-green btn-large">
+              <span>🔒 LOCK IN O₂ LEVEL</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- LEVEL 1, TASK 2: LUNAR CROP PRODUCTION -->
+        <div id="l1t2View" class="task-view-container">
+          <canvas id="l1t2Canvas"></canvas>
+          <div
+            style="
+              position: absolute;
+              bottom: 20px;
+              left: 24px;
+              display: flex;
+              gap: 8px;
+              z-index: 50;
+            "
+          >
+            <button id="l1t2BtnLeft" class="touch-btn">◀</button>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <button id="l1t2BtnUp" class="touch-btn">▲</button>
+              <button id="l1t2BtnDown" class="touch-btn">▼</button>
+            </div>
+            <button id="l1t2BtnRight" class="touch-btn">▶</button>
+          </div>
+          <div class="farm-action-btn-bar">
+            <button id="l1t2ActionBtn" class="btn btn-gold btn-large">
+              🌱 Plant Seeds
+            </button>
+          </div>
+        </div>
+
+        <!-- LEVEL 1, TASK 3: SOLAR POWER GENERATION -->
+        <div id="l1t3View" class="task-view-container">
+          <div class="solar-play-board">
+            <div id="l1t3Grid" class="solar-terrain-grid">
+              <!-- Slots rendered dynamically by level1Task3.js -->
+            </div>
+            <div id="l1t3PanelTray" class="solar-piece-tray">
+              <!-- Panels rendered dynamically by level1Task3.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 2, TASK 1: FIX AIR LEAK -->
+        <div id="task1View" class="task-view-container">
+          <div id="hullVignette" class="hull-vignette"></div>
+          <canvas id="t1Canvas"></canvas>
+        </div>
+
+        <!-- LEVEL 2, TASK 2: COLLECT ESSENTIALS (RUNNER) -->
+        <div id="task2View" class="task-view-container">
+          <canvas id="runnerCanvas"></canvas>
+          <div class="runner-touch-controls">
+            <div style="display: flex; gap: 12px">
+              <button id="touchBtnLeft" class="touch-btn">◀</button>
+              <button id="touchBtnRight" class="touch-btn">▶</button>
+            </div>
+            <div style="display: flex; gap: 12px">
+              <button id="touchBtnJump" class="touch-btn">▲</button>
+              <button id="touchBtnSlide" class="touch-btn">▼</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 2, TASK 3: POWER SAVE (SPACESHIP DECK) -->
+        <div id="task3View" class="task-view-container">
+          <div id="spaceshipDeck">
+            <div class="station-card" id="station-oxygen" data-station="oxygen">
+              <div class="station-icon">🫧</div>
+              <div class="station-name">Oxygen Generator</div>
+              <div class="station-status-pill">NOMINAL</div>
+            </div>
+            <div
+              class="station-card"
+              id="station-navigation"
+              data-station="navigation"
+            >
+              <div class="station-icon">🧭</div>
+              <div class="station-name">Navigation Bridge</div>
+              <div class="station-status-pill">NOMINAL</div>
+            </div>
+            <div
+              class="station-card"
+              id="station-reactor"
+              data-station="reactor"
+            >
+              <div class="station-icon">⚛️</div>
+              <div class="station-name">Main Reactor</div>
+              <div class="station-status-pill">NOMINAL</div>
+            </div>
+            <div
+              class="station-card"
+              id="station-lifeSupport"
+              data-station="lifeSupport"
+            >
+              <div class="station-icon">❤️</div>
+              <div class="station-name">Life Support</div>
+              <div class="station-status-pill">NOMINAL</div>
+            </div>
+            <div
+              class="station-card"
+              id="station-communication"
+              data-station="communication"
+            >
+              <div class="station-icon">📡</div>
+              <div class="station-name">Communications</div>
+              <div class="station-status-pill">NOMINAL</div>
+            </div>
+          </div>
+
+          <!-- Task 3 Minigame Overlay Modal -->
+          <div id="minigameModalOverlay">
+            <div class="minigame-box">
+              <button id="minigameCloseBtn" class="minigame-close-btn">
+                ✕
+              </button>
+              <h3
+                id="minigameTitle"
+                style="
+                  font-size: 1.4rem;
+                  color: var(--accent-gold);
+                  margin-bottom: 6px;
+                "
+              >
+                REPAIR SYSTEM
+              </h3>
+              <p
+                id="minigameDesc"
+                style="color: var(--text-sub); font-size: 0.95rem"
+              >
+                Complete the calibration puzzle.
+              </p>
+
+              <!-- 1) Wires Minigame -->
+              <div
+                id="minigameWires"
+                class="wires-container"
+                style="display: none"
+              >
+                <canvas id="wireCanvas"></canvas>
+                <div id="wiresLeftCol" class="wire-column"></div>
+                <div id="wiresRightCol" class="wire-column"></div>
+              </div>
+
+              <!-- 2) Power Sliders Minigame -->
+              <div
+                id="minigamePower"
+                class="power-grid-container"
+                style="display: none"
+              >
+                <div id="channelCH1" class="power-channel">
+                  <div class="channel-info">
+                    <span>Life Support Subsystem</span>
+                    <span class="channel-target"
+                      >Target: 40% (Current: <b id="valCH1">15%</b>)</span
+                    >
+                  </div>
+                  <div class="channel-slider-wrap">
+                    <input
+                      type="range"
+                      id="sliderCh1"
+                      min="0"
+                      max="100"
+                      value="15"
+                      class="power-slider"
+                    />
+                  </div>
+                </div>
+                <div id="channelCH2" class="power-channel">
+                  <div class="channel-info">
+                    <span>Radiation Deflector Shields</span>
+                    <span class="channel-target"
+                      >Target: 35% (Current: <b id="valCH2">65%</b>)</span
+                    >
+                  </div>
+                  <div class="channel-slider-wrap">
+                    <input
+                      type="range"
+                      id="sliderCh2"
+                      min="0"
+                      max="100"
+                      value="65"
+                      class="power-slider"
+                    />
+                  </div>
+                </div>
+                <div id="channelCH3" class="power-channel">
+                  <div class="channel-info">
+                    <span>Auxiliary Thruster Bus</span>
+                    <span class="channel-target"
+                      >Target: 25% (Current: <b id="valCH3">20%</b>)</span
+                    >
+                  </div>
+                  <div class="channel-slider-wrap">
+                    <input
+                      type="range"
+                      id="sliderCh3"
+                      min="0"
+                      max="100"
+                      value="20"
+                      class="power-slider"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="powerCalibrationStatus"
+                  class="power-calibration-status"
+                  role="status"
+                  aria-live="polite"
+                >
+                  0 / 3 power channels calibrated
+                </div>
+              </div>
+
+              <!-- 3) Keypad Minigame -->
+              <div
+                id="minigameKeypad"
+                class="keypad-container"
+                style="display: none"
+              >
+                <div id="sequenceSlots" class="sequence-display"></div>
+                <div id="keypadGrid" class="keypad-grid">
+                  <button class="keypad-key" data-key="0">1</button>
+                  <button class="keypad-key" data-key="1">2</button>
+                  <button class="keypad-key" data-key="2">3</button>
+                  <button class="keypad-key" data-key="3">4</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEVEL 3, TASK 1: RADIATION STORM -->
+        <div id="l3t1View" class="task-view-container l3-task-view">
+          <div class="l3-mission-shell">
+            <div class="l3-mission-heading">
+              <div><span class="l3-kicker">LEVEL 3 • EMERGENCY ALERT</span><h2>☄️ Radiation Storm</h2><p>Charge all three shield generators before the storm reaches the ship!</p></div>
+              <div class="l3-radiation-meter"><span>RADIATION LEVEL</span><strong id="l3RadiationValueScene">24%</strong><div class="l3-radiation-track"><span id="l3RadiationFill" style="width:24%"></span></div></div>
+            </div>
+            <div class="l3-storm-scene">
+              <div class="l3-storm-planet">🌎</div><div class="l3-storm-comet">☄️</div><div class="l3-storm-astronaut">🧑‍🚀</div>
+              <div class="l3-storm-caption">PROTECT THE CREW • ACTIVATE THE SHIELDS</div>
+            </div>
+            <div id="l3ShieldGrid" class="l3-shield-grid"></div>
+            <div id="l3RadiationFeedback" class="l3-feedback" role="status">Storm detected! Charge all shield generators.</div>
+          </div>
+        </div>
+
+        <!-- LEVEL 3, TASK 2: BUY CREW FOOD & OXYGEN -->
+        <div id="l3t2View" class="task-view-container l3-task-view">
+          <div class="l3-mission-shell">
+            <div class="l3-mission-heading">
+              <div><span class="l3-kicker">LEVEL 3 • CREW CARGO</span><h2>📦 Check & Pack Supplies</h2><p>Verify the food from Level 1 and survival supplies from Level 2 before the rescue.</p></div>
+              <div id="l3StoreWallet" class="l3-wallet">CARGO CHECK</div>
+            </div>
+            <div class="l3-order-strip">
+              <div>👩‍🚀 <strong>Captain Nova</strong><span>Fruit ×1 + Protein bar ×1</span></div>
+              <div>🧑‍🚀 <strong>Pilot Orion</strong><span>Veggie wrap ×1 + Water ×1</span></div>
+              <div>👩‍🚀 <strong>Engineer Luna</strong><span>Fruit ×1 + Veggie wrap ×1</span></div>
+            </div>
+            <div id="l3StoreItems" class="l3-store-grid"></div>
+            <div id="l3StoreFeedback" class="l3-feedback" role="status">Check the resources collected in Levels 1 and 2.</div>
+            <button id="l3StoreCheckout" class="btn btn-green btn-large" disabled>PACK ALL SUPPLIES 📦</button>
+          </div>
+        </div>
+
+        <!-- LEVEL 3, TASK 3: RESCUE & RETURN TO EARTH -->
+        <div id="l3t3View" class="task-view-container l3-task-view">
+          <div class="l3-mission-shell">
+            <div class="l3-mission-heading">
+              <div><span class="l3-kicker">LEVEL 3 • FINAL MISSION</span><h2>🚀 Rescue & Return to Earth</h2><p>Finish every safety check, pack the cargo, then help each injured astronaut.</p></div>
+              <div class="l3-earth-badge">🌍 EARTH IS HOME</div>
+            </div>
+            <div class="l3-checklist-panel">
+              <h3>📋 PRE-FLIGHT CHECKLIST</h3>
+              <p>Tap every item after checking it carefully.</p>
+              <div id="l3Checklist" class="l3-checklist"></div>
+              <button id="l3PackSupplies" class="btn btn-primary btn-large" disabled>PACK ALL SUPPLIES 📦</button>
+            </div>
+            <div id="l3RescueFeedback" class="l3-feedback" role="status">The injured crew are waiting. Check the ship before starting the rescue.</div>
+            <div id="l3RescueCrew" class="l3-rescue-crew" hidden></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+       ROBOT BUDDY WIDGET (Always with player!)
+       ========================================================= -->
+    <div id="robotBuddyWidget">
+      <div class="robot-figure">
+        <svg viewBox="0 0 80 95">
+          <!-- Floating Thruster Glow -->
+          <ellipse
+            cx="40"
+            cy="85"
+            rx="16"
+            ry="6"
+            fill="#00f0ff"
+            opacity="0.7"
+          />
+          <polygon points="40,82 32,95 40,90 48,95" fill="#ffd166" />
+          <!-- Robot Body -->
+          <rect
+            x="18"
+            y="56"
+            width="44"
+            height="26"
+            rx="12"
+            fill="#334155"
+            stroke="#00f0ff"
+            stroke-width="2.5"
+          />
+          <circle cx="40" cy="69" r="6" fill="#ffd166" />
+          <!-- Neck -->
+          <rect x="36" y="50" width="8" height="8" fill="#64748b" />
+          <!-- Robot Head -->
+          <rect
+            x="12"
+            y="16"
+            width="56"
+            height="36"
+            rx="14"
+            fill="#1e293b"
+            stroke="#00f0ff"
+            stroke-width="2.5"
+          />
+          <!-- Antenna -->
+          <line
+            x1="40"
+            y1="16"
+            x2="40"
+            y2="4"
+            stroke="#00f0ff"
+            stroke-width="2.5"
+          />
+          <circle cx="40" cy="4" r="4.5" fill="#ffd166" />
+        </svg>
+        <!-- Animated Screen & Eyes -->
+        <div class="robot-screen">
+          <span id="robotEyes" class="robot-eyes">• •</span>
+        </div>
+      </div>
+
+      <!-- Speech Bubble -->
+      <div id="robotSpeechBubble" class="robot-speech-bubble">
+        <div class="robot-buddy-name">🤖 GIZMO (ROBOT BUDDY)</div>
+        <div id="robotSpeechText" class="robot-speech-text">
+          Ready for our space mission!
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+       MODALS: BRIEFING, COMPLETE, GAME OVER, VICTORY, PAUSE
+       ========================================================= -->
+
+    <!-- Briefing Modal -->
+    <div id="modalBriefing" class="modal-overlay">
+      <div class="modal-card mission-briefing-card">
+        <div class="mission-briefing-copy">
+          <div id="briefingIconWrap" class="modal-icon-badge">🚀</div>
+          <div
+            id="briefingTagline"
+            style="
+              font-size: 0.8rem;
+              font-weight: 800;
+              color: var(--accent-gold);
+              letter-spacing: 1px;
+            "
+          >
+            MISSION BRIEFING
+          </div>
+          <h2 id="briefingTitle" class="modal-title">MISSION BRIEFING</h2>
+          <div id="briefingCode" style="display: none"></div>
+          <p id="briefingSubtitle" class="modal-sub">Task briefing message.</p>
+          <div
+            id="briefingProtocolList"
+            class="modal-stats-box"
+            style="flex-direction: column; gap: 8px; text-align: left"
+          ></div>
+          <div
+            id="briefingControlsGuide"
+            style="
+              margin-bottom: 14px;
+              font-size: 0.95rem;
+              color: var(--accent-cyan);
+            "
+          ></div>
+          <button id="btnStartTask" class="btn btn-primary btn-large pulse">
+            <span>LET'S GO! 🚀</span>
+          </button>
+        </div>
+        <aside
+          class="briefing-rocket-deck"
+          aria-label="Animated NASA-style rocket"
+        >
+          <div class="briefing-rocket-label">FLIGHT SIMULATION · LIVE</div>
+          <div class="rocket-model-flight">
+            <svg
+              class="briefing-rocket-model"
+              viewBox="0 0 120 250"
+              role="img"
+              aria-label="Rocket flying through space"
+            >
+              <defs>
+                <linearGradient
+                  id="cosmoRocketHull"
+                  x1="0"
+                  x2="1"
+                  y1="0"
+                  y2="1"
+                >
+                  <stop stop-color="#fff" />
+                  <stop offset=".52" stop-color="#d8e3ef" />
+                  <stop offset="1" stop-color="#7d91a8" />
+                </linearGradient>
+                <linearGradient
+                  id="cosmoRocketFlame"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="1"
+                >
+                  <stop stop-color="#fff7b2" />
+                  <stop offset=".4" stop-color="#ffb21c" />
+                  <stop offset="1" stop-color="#ff5b25" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M60 8 C39 28 31 65 31 111 L31 165 L89 165 L89 111 C89 65 81 28 60 8Z"
+                fill="url(#cosmoRocketHull)"
+                stroke="#f8fafc"
+                stroke-width="2"
+              />
+              <path
+                d="M60 8 C50 20 43 34 39 51 L81 51 C77 34 70 20 60 8Z"
+                fill="#e23b3b"
+              />
+              <path
+                d="M31 122 L10 158 L31 151Z M89 122 L110 158 L89 151Z"
+                fill="#e23b3b"
+                stroke="#f8fafc"
+                stroke-width="2"
+              />
+              <path d="M48 166 L45 183 L75 183 L72 166Z" fill="#7d91a8" />
+              <circle
+                cx="60"
+                cy="83"
+                r="13"
+                fill="#123253"
+                stroke="#f8fafc"
+                stroke-width="5"
+              />
+              <circle cx="60" cy="83" r="7" fill="#5bc8ed" />
+              <path d="M48 111 H72" stroke="#d62027" stroke-width="8" />
+              <path
+                d="M51 184 C51 206 44 220 47 242 C55 233 57 221 60 205 C63 221 65 233 73 242 C76 220 69 206 69 184Z"
+                fill="url(#cosmoRocketFlame)"
+                class="rocket-model-flame"
+              />
+              <path
+                d="M56 184 C56 199 58 210 60 218 C62 210 64 199 64 184Z"
+                fill="#fff6cb"
+                class="rocket-model-flame"
+              />
+            </svg>
+          </div>
+          <div class="briefing-rocket-caption">
+            ORBITAL VEHICLE <strong>CC-02</strong>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Task Complete Modal -->
+    <div id="modalTaskComplete" class="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-icon-badge">🎉</div>
+        <h2 id="completeTitle" class="modal-title">TASK COMPLETE!</h2>
+        <p id="completeSubtitle" class="modal-sub">
+          Exceptional response Cadet!
+        </p>
+        <div class="modal-stats-box">
+          <div>
+            <div id="completeStat1Lbl" class="stat-item-label">Performance</div>
+            <div id="completeStat1Val" class="stat-item-value">100%</div>
+          </div>
+          <div>
+            <div id="completeStat2Lbl" class="stat-item-label">Time Taken</div>
+            <div id="completeStat2Val" class="stat-item-value">15s</div>
+          </div>
+        </div>
+        <button id="btnNextTask" class="btn btn-green btn-large pulse">
+          <span>NEXT MISSION ➡️</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="modalGameOver" class="modal-overlay">
+      <div class="modal-card">
+        <div class="modal-icon-badge">💫</div>
+        <h2 class="modal-title" style="color: var(--accent-red)">
+          MISSION INCOMPLETE
+        </h2>
+        <p id="gameOverReason" class="modal-sub">
+          Time expired before parameters were met.
+        </p>
+        <div
+          id="gameOverTaskName"
+          style="
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            margin-bottom: 24px;
+          "
+        >
+          CosmoCrew Mission
+        </div>
+        <button id="btnRetryTask" class="btn btn-primary btn-large pulse">
+          <span>TRY AGAIN 🔄</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Level Victory Diploma Modal -->
+    <div id="modalVictory" class="modal-overlay">
+      <div class="modal-card diploma-card">
+        <div class="victory-stars">⭐ ⭐ ⭐</div>
+        <div id="victoryAvatarBadge" class="victory-avatar-badge">
+          <span class="victory-avatar-emoji">🐰</span>
+          <h3>Awarded to Cadet Explorer</h3>
+        </div>
+        <h2 class="modal-title" style="color: var(--accent-gold)">
+          LEVEL COMPLETE!
+        </h2>
+        <p class="modal-sub">
+          Congratulations! You successfully finished all 3 missions!
+        </p>
+        <div class="modal-stats-box">
+          <div>
+            <div class="stat-item-label">TOTAL TIME</div>
+            <div id="victoryTotalTime" class="stat-item-value">45s</div>
+          </div>
+          <div>
+            <div class="stat-item-label">MISSION SCORE</div>
+            <div id="victoryTotalScore" class="stat-item-value">3000 PTS</div>
+          </div>
+        </div>
+        <button id="btnRestartMission" class="btn btn-gold btn-large pulse">
+          <span>CHOOSE LEVEL 🌌</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Pause Modal -->
+    <div id="modalPause" class="modal-overlay">
+      <div class="modal-card" style="max-width: 440px">
+        <h2 class="modal-title">GAME PAUSED</h2>
+        <p class="modal-sub">Take a quick breather Cadet!</p>
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <button id="btnResumeGame" class="btn btn-primary">
+            <span>▶️ RESUME</span>
+          </button>
+          <button id="btnRestartTask" class="btn btn-secondary">
+            <span>🔄 RESTART TASK</span>
+          </button>
+          <button id="btnQuitToMenu" class="btn btn-secondary">
+            <span>🌌 LEVEL SELECT</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Stars Generator Script -->
+    <script>
+      (function initStars() {
+        const container = document.getElementById('starField');
+        if (!container) return;
+        const count = 75;
+        for (let i = 0; i < count; i++) {
+          const star = document.createElement('div');
+          star.className = 'star';
+          star.style.left = `${Math.random() * 100}vw`;
+          star.style.top = `${Math.random() * 100}vh`;
+          const size = 1 + Math.random() * 3.5;
+          star.style.width = `${size}px`;
+          star.style.height = `${size}px`;
+          star.style.animationDelay = `${Math.random() * 4}s`;
+          container.appendChild(star);
+        }
+      })();
+    </script>
+
+    <!-- Game Scripts -->
+    <script src="audio.js"></script>
+    <script src="level1Task1.js"></script>
+    <script src="level1Task2.js"></script>
+    <script src="level1Task3.js"></script>
+    <script src="level2Task1.js"></script>
+    <script src="level2Task2.js"></script>
+    <script src="level2Task3.js"></script>
+    <script src="/level3Task1.js"></script>
+    <script src="/level3Task2.js"></script>
+    <script src="/level3Task3.js"></script>
+    <script src="ui.js"></script>
+  </body>
+</html>
