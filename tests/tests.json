@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Launch the Earth Workshop mission",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": ["game launch", "avatar selection", "Level 1 mission briefing", "Level 1 task interaction"],
+    "description": "Verifies the original Level 1 launch and oxygen regulation mission still work.",
+    "steps": ["Open CosmoCrew", "Select Start Adventure", "Select Earth Workshop / Level 1", "Start the oxygen regulation mission", "Move the oxygen slider into the safe zone and lock it in"],
+    "expected": "The oxygen mission completes and the task-complete screen appears with the next mission action."
+  },
+  {
+    "name": "Harvest and save Level 1 food",
+    "viewport": "desktop",
+    "covers": ["Level 1 crop harvesting", "fruit inventory", "vegetable inventory", "resource persistence"],
+    "description": "Verifies the crop mission saves two fruits and two vegetables for the crew's later return journey.",
+    "steps": ["Complete the Level 1 crop-growing task", "Harvest Star Fruit and Space Berries", "Harvest Moon Lettuce and Solar Carrot", "Return to level selection"],
+    "expected": "The shared cargo inventory contains at least 2 fruits and 2 vegetables."
+  },
+  {
+    "name": "Collect Level 2 survival essentials",
+    "viewport": "desktop",
+    "covers": ["Level 2 runner collection", "oxygen collection target", "protein bar collection target", "water collection target"],
+    "description": "Verifies the runner requires only the supplies needed for the Level 3 crew.",
+    "steps": ["Select Level 2 and open Task 2", "Collect 3 oxygen canisters", "Collect 1 protein bar", "Collect 1 water pack"],
+    "expected": "The runner completes after 3 oxygen, 1 protein bar, and 1 water pack are collected, and these amounts are saved."
+  },
+  {
+    "name": "Keep Return to Earth locked when cargo is incomplete",
+    "viewport": "desktop",
+    "covers": ["Level 3 access gate", "missing resource feedback", "required cargo quantities"],
+    "description": "Verifies players cannot enter Level 3 until all required food and survival supplies have been collected.",
+    "steps": ["Open level selection with fewer than the required supplies", "Select Return to Earth"],
+    "expected": "Level 3 does not open and the player is told which quantities are still missing."
+  },
+  {
+    "name": "Pack collected supplies and rescue the crew",
+    "viewport": "desktop",
+    "covers": ["Level 3 cargo verification", "food and survival resource transfer", "astronaut-specific food delivery", "oxygen distribution", "Earth return victory"],
+    "setup": ["Complete Level 1 crop harvesting to collect 2 fruits and 2 vegetables", "Complete Level 2 runner collection to collect 3 oxygen, 1 protein bar, and 1 water"],
+    "description": "Verifies Level 3 uses previously collected resources instead of requiring purchases or coins.",
+    "steps": ["Select Return to Earth after the cargo requirements are met", "Complete the radiation storm", "Review the collected cargo in Check & Pack Supplies", "Pack all supplies", "Complete the pre-flight checklist", "Give each astronaut their required food and one oxygen canister"],
+    "expected": "The crew receives the correct food and oxygen from the shared inventory and the Earth return victory screen appears."
+  },
+  {
+    "name": "Use the resource runner controls on mobile",
+    "viewport": "mobile",
+    "covers": ["mobile Level 2 runner layout", "touch lane controls", "touch jump and slide", "mobile resource collection"],
+    "description": "Verifies the updated oxygen, protein, and water collectibles remain usable on mobile.",
+    "steps": ["Open CosmoCrew on a mobile viewport", "Select Level 2 and open the runner task", "Swipe between lanes and use jump and slide controls", "Collect the displayed resource targets"],
+    "expected": "The mobile runner responds to touch and displays the 3 oxygen, 1 protein, and 1 water targets."
+  }
+]
